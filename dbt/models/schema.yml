@@ -1,0 +1,146 @@
+
+# DBT schema file for model documentation and tests
+version: 2
+
+models:
+  - name: stg_users
+    description: "Staging model for raw user profile data with typed dates and standardized column names."
+    columns:
+      - name: user_id
+        description: "Unique user identifier."
+        tests:
+          - unique
+          - not_null
+      - name: signup_date
+        description: "User signup date as a date data type."
+        tests:
+          - not_null
+      - name: acquisition_channel
+        description: "Source channel through which the user was acquired."
+        tests:
+          - not_null
+      - name: account_type
+        description: "Product type selected by the user: Banking, Invest, or Both."
+        tests:
+          - not_null
+      - name: state
+        description: "User state for geolocation-level retention and churn analysis."
+      - name: age_group
+        description: "User age bracket for segmentation."
+      - name: churned
+        description: "Binary churn flag derived from transactional inactivity."
+      - name: churn_type
+        description: "Churn segment label: Active, Silent, or Explicit."
+
+  - name: stg_transactions
+    description: "Staging model for raw transaction records with typed dates and normalized amounts."
+    columns:
+      - name: transaction_id
+        description: "Unique transaction identifier."
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: "Foreign key joining transactions to user profiles."
+        tests:
+          - not_null
+      - name: transaction_date
+        description: "Transaction date as a date data type."
+        tests:
+          - not_null
+      - name: amount_usd
+        description: "Transaction amount in USD, positive for deposits and negative for withdrawals."
+      - name: transaction_type
+        description: "Transaction type, including Round-Up and standard deposit/withdrawal categories."
+      - name: product
+        description: "Product line associated with the transaction, either Banking or Invest."
+      - name: round_up
+        description: "Round-up amount created by micro-investing behavior."
+
+  - name: stg_events
+    description: "Staging model for raw event logs with typed dates and normalized event names."
+    columns:
+      - name: event_id
+        description: "Unique event identifier."
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: "Foreign key joining events to user profiles."
+        tests:
+          - not_null
+      - name: event_date
+        description: "Event date as a date data type."
+        tests:
+          - not_null
+      - name: event_type
+        description: "Event name used to build product funnels and retention cohorts."
+      - name: platform
+        description: "Device platform for event segmentation."
+      - name: session_duration_sec
+        description: "Session duration in seconds for event-level engagement analysis."
+
+  - name: mart_user_summary
+    description: "User-level analytics mart combining profile, transaction, and event metrics for retention and segment analysis."
+    columns:
+      - name: user_id
+        description: "Unique user identifier."
+        tests:
+          - unique
+          - not_null
+      - name: churn_type
+        description: "Segment label distinguishing Active, Silent, and Explicit churn behavior."
+      - name: total_transactions
+        description: "Total number of transactions per user."
+      - name: total_deposited
+        description: "Total deposited amount per user."
+      - name: total_withdrawn
+        description: "Total withdrawn amount per user."
+      - name: running_balance
+        description: "Net balance change across all transactions."
+      - name: days_since_last_transaction
+        description: "Days since the user's most recent transaction relative to the observation end date."
+
+  - name: mart_churn_cohort
+    description: "Cohort-level churn mart summarizing signup cohorts and churn rates by month."
+    columns:
+      - name: cohort_month
+        description: "Month of signup used for cohort analysis."
+        tests:
+          - not_null
+      - name: total_users
+        description: "Total users in each signup cohort."
+      - name: churned_users
+        description: "Number of churned users in the cohort."
+      - name: retained_users
+        description: "Number of retained users in the cohort."
+      - name: churn_rate_pct
+        description: "Cohort churn rate expressed as a percentage."
+
+  - name: mart_churn_cohort_stacked
+    description: "Long-form cohort churn mart for Tableau stacked bar visualizations."
+    columns:
+      - name: cohort_month
+        description: "Month of signup for cohort visualizations."
+        tests:
+          - not_null
+      - name: status
+        description: "Status label for stacked cohorts: Churned or Retained."
+      - name: users
+        description: "User count for each cohort status (Churned or Retained)."
+
+  - name: mart_transaction_summary
+    description: "Monthly transaction summary mart by product and transaction type."
+    columns:
+      - name: transaction_month
+        description: "Month of transaction activity."
+        tests:
+          - not_null
+      - name: product
+        description: "Product line for the transaction summary."
+      - name: transaction_type
+        description: "Transaction category for the summary."
+      - name: transaction_count
+        description: "Number of transactions for the given month, product, and transaction type."
+      - name: net_flow
+        description: "Net dollar flow for each combination of month, product, and transaction type."

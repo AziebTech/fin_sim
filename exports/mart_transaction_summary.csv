@@ -1,0 +1,105 @@
+transaction_month,product,transaction_type,transaction_count,total_deposited,total_withdrawn,total_round_ups,net_flow
+2025-05-01,Banking,One-Time Deposit,5,538.41,0.0,0.0,538.41
+2025-05-01,Banking,Recurring Deposit,9,1412.62,0.0,0.0,1412.62
+2025-05-01,Banking,Round-Up,18,28.51,0.0,8.49,28.51
+2025-05-01,Banking,Withdrawal,1,0.0,100.28,0.0,-100.28
+2025-05-01,Invest,One-Time Deposit,2,221.15,0.0,0.0,221.15
+2025-05-01,Invest,Recurring Deposit,2,371.62,0.0,0.0,371.62
+2025-05-01,Invest,Round-Up,5,9.72,0.0,3.28,9.72
+2025-05-01,Invest,Withdrawal,2,0.0,239.76,0.0,-239.76
+2025-06-01,Banking,One-Time Deposit,17,1923.39,0.0,0.0,1923.39
+2025-06-01,Banking,Recurring Deposit,11,1328.58,0.0,0.0,1328.58
+2025-06-01,Banking,Round-Up,29,41.25,0.0,13.75,41.25
+2025-06-01,Banking,Withdrawal,8,0.0,1094.18,0.0,-1094.18
+2025-06-01,Invest,One-Time Deposit,12,1584.55,0.0,0.0,1584.55
+2025-06-01,Invest,Recurring Deposit,13,966.13,0.0,0.0,966.13
+2025-06-01,Invest,Round-Up,25,38.81,0.0,12.19,38.81
+2025-06-01,Invest,Withdrawal,4,0.0,362.84,0.0,-362.84
+2025-07-01,Banking,One-Time Deposit,25,2655.74,0.0,0.0,2655.74
+2025-07-01,Banking,Recurring Deposit,34,5230.82,0.0,0.0,5230.82
+2025-07-01,Banking,Round-Up,65,86.86,0.0,34.14,86.86
+2025-07-01,Banking,Withdrawal,14,0.0,1345.56,0.0,-1345.56
+2025-07-01,Invest,One-Time Deposit,22,2765.15,0.0,0.0,2765.15
+2025-07-01,Invest,Recurring Deposit,33,4381.55,0.0,0.0,4381.55
+2025-07-01,Invest,Round-Up,57,92.01,0.0,26.99,92.01
+2025-07-01,Invest,Withdrawal,8,0.0,1124.21,0.0,-1124.21
+2025-08-01,Banking,One-Time Deposit,30,3282.34,0.0,0.0,3282.34
+2025-08-01,Banking,Recurring Deposit,51,6061.12,0.0,0.0,6061.12
+2025-08-01,Banking,Round-Up,85,148.52,0.0,40.48,148.52
+2025-08-01,Banking,Withdrawal,12,0.0,1088.78,0.0,-1088.78
+2025-08-01,Invest,One-Time Deposit,27,3229.11,0.0,0.0,3229.11
+2025-08-01,Invest,Recurring Deposit,26,3281.25,0.0,0.0,3281.25
+2025-08-01,Invest,Round-Up,67,107.07,0.0,29.93,107.07
+2025-08-01,Invest,Withdrawal,16,0.0,2211.67,0.0,-2211.67
+2025-09-01,Banking,One-Time Deposit,56,6241.15,0.0,0.0,6241.15
+2025-09-01,Banking,Recurring Deposit,44,5356.32,0.0,0.0,5356.32
+2025-09-01,Banking,Round-Up,102,153.88,0.0,50.12,153.88
+2025-09-01,Banking,Withdrawal,21,0.0,2759.92,0.0,-2759.92
+2025-09-01,Invest,One-Time Deposit,42,6224.3,0.0,0.0,6224.3
+2025-09-01,Invest,Recurring Deposit,41,5550.62,0.0,0.0,5550.62
+2025-09-01,Invest,Round-Up,73,102.39,0.0,34.61,102.39
+2025-09-01,Invest,Withdrawal,14,0.0,1935.26,0.0,-1935.26
+2025-10-01,Banking,One-Time Deposit,47,5995.89,0.0,0.0,5995.89
+2025-10-01,Banking,Recurring Deposit,70,8930.48,0.0,0.0,8930.48
+2025-10-01,Banking,Round-Up,99,145.52,0.0,50.48,145.52
+2025-10-01,Banking,Withdrawal,28,0.0,3801.66,0.0,-3801.66
+2025-10-01,Invest,One-Time Deposit,41,5870.51,0.0,0.0,5870.51
+2025-10-01,Invest,Recurring Deposit,53,7021.94,0.0,0.0,7021.94
+2025-10-01,Invest,Round-Up,104,172.59,0.0,54.41,172.59
+2025-10-01,Invest,Withdrawal,21,0.0,2630.35,0.0,-2630.35
+2025-11-01,Banking,One-Time Deposit,77,9030.19,0.0,0.0,9030.19
+2025-11-01,Banking,Recurring Deposit,68,9322.09,0.0,0.0,9322.09
+2025-11-01,Banking,Round-Up,109,163.66,0.0,53.34,163.66
+2025-11-01,Banking,Withdrawal,24,0.0,3136.08,0.0,-3136.08
+2025-11-01,Invest,One-Time Deposit,53,6551.42,0.0,0.0,6551.42
+2025-11-01,Invest,Recurring Deposit,67,8764.83,0.0,0.0,8764.83
+2025-11-01,Invest,Round-Up,120,169.57,0.0,61.43,169.57
+2025-11-01,Invest,Withdrawal,27,0.0,3434.79,0.0,-3434.79
+2025-12-01,Banking,One-Time Deposit,66,8291.55,0.0,0.0,8291.55
+2025-12-01,Banking,Recurring Deposit,83,10986.37,0.0,0.0,10986.37
+2025-12-01,Banking,Round-Up,142,232.8,0.0,70.2,232.8
+2025-12-01,Banking,Withdrawal,31,0.0,3891.19,0.0,-3891.19
+2025-12-01,Invest,One-Time Deposit,54,7390.27,0.0,0.0,7390.27
+2025-12-01,Invest,Recurring Deposit,62,7784.27,0.0,0.0,7784.27
+2025-12-01,Invest,Round-Up,132,205.53,0.0,70.47,205.53
+2025-12-01,Invest,Withdrawal,25,0.0,2884.45,0.0,-2884.45
+2026-01-01,Banking,One-Time Deposit,89,11719.23,0.0,0.0,11719.23
+2026-01-01,Banking,Recurring Deposit,115,13668.98,0.0,0.0,13668.98
+2026-01-01,Banking,Round-Up,198,304.03,0.0,95.97,304.03
+2026-01-01,Banking,Withdrawal,48,0.0,5451.88,0.0,-5451.88
+2026-01-01,Invest,One-Time Deposit,61,7305.8,0.0,0.0,7305.8
+2026-01-01,Invest,Recurring Deposit,86,10754.33,0.0,0.0,10754.33
+2026-01-01,Invest,Round-Up,157,249.11,0.0,77.89,249.11
+2026-01-01,Invest,Withdrawal,28,0.0,3722.94,0.0,-3722.94
+2026-02-01,Banking,One-Time Deposit,84,11283.21,0.0,0.0,11283.21
+2026-02-01,Banking,Recurring Deposit,120,16241.93,0.0,0.0,16241.93
+2026-02-01,Banking,Round-Up,188,270.09,0.0,95.91,270.09
+2026-02-01,Banking,Withdrawal,42,0.0,5250.17,0.0,-5250.17
+2026-02-01,Invest,One-Time Deposit,86,11255.34,0.0,0.0,11255.34
+2026-02-01,Invest,Recurring Deposit,109,13792.57,0.0,0.0,13792.57
+2026-02-01,Invest,Round-Up,185,283.0,0.0,93.0,283.0
+2026-02-01,Invest,Withdrawal,48,0.0,5154.73,0.0,-5154.73
+2026-03-01,Banking,One-Time Deposit,137,17203.67,0.0,0.0,17203.67
+2026-03-01,Banking,Recurring Deposit,156,19411.71,0.0,0.0,19411.71
+2026-03-01,Banking,Round-Up,301,449.73,0.0,153.27,449.73
+2026-03-01,Banking,Withdrawal,79,0.0,10059.94,0.0,-10059.94
+2026-03-01,Invest,One-Time Deposit,105,13256.86,0.0,0.0,13256.86
+2026-03-01,Invest,Recurring Deposit,160,20632.86,0.0,0.0,20632.86
+2026-03-01,Invest,Round-Up,265,431.02,0.0,129.98,431.02
+2026-03-01,Invest,Withdrawal,58,0.0,7884.14,0.0,-7884.14
+2026-04-01,Banking,One-Time Deposit,188,22886.57,0.0,0.0,22886.57
+2026-04-01,Banking,Recurring Deposit,286,36733.38,0.0,0.0,36733.38
+2026-04-01,Banking,Round-Up,427,630.55,0.0,208.45,630.55
+2026-04-01,Banking,Withdrawal,108,0.0,14419.99,0.0,-14419.99
+2026-04-01,Invest,One-Time Deposit,170,19922.51,0.0,0.0,19922.51
+2026-04-01,Invest,Recurring Deposit,229,30029.6,0.0,0.0,30029.6
+2026-04-01,Invest,Round-Up,406,615.49,0.0,197.51,615.49
+2026-04-01,Invest,Withdrawal,92,0.0,10225.99,0.0,-10225.99
+2026-05-01,Banking,One-Time Deposit,58,7161.24,0.0,0.0,7161.24
+2026-05-01,Banking,Recurring Deposit,67,8920.87,0.0,0.0,8920.87
+2026-05-01,Banking,Round-Up,122,200.85,0.0,58.15,200.85
+2026-05-01,Banking,Withdrawal,27,0.0,2930.24,0.0,-2930.24
+2026-05-01,Invest,One-Time Deposit,38,5333.61,0.0,0.0,5333.61
+2026-05-01,Invest,Recurring Deposit,46,5753.81,0.0,0.0,5753.81
+2026-05-01,Invest,Round-Up,87,121.48,0.0,47.52,121.48
+2026-05-01,Invest,Withdrawal,13,0.0,1862.46,0.0,-1862.46

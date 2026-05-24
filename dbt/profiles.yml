@@ -1,0 +1,10 @@
+# DBT profile for the fin_sim project
+fin_sim:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb           # Use DuckDB as the database
+      path: dbt.duckdb       # Path to DuckDB database file
+      extensions:
+        - parquet           # Enable Parquet extension for file support
+      threads: 4            # Number of threads for DBT to use

@@ -1,0 +1,26 @@
+
+# Project name and version
+name: 'fin_sim'
+version: '1.0.0'
+
+# DBT profile to use for connection
+profile: 'fin_sim'
+
+# Paths for different DBT resources
+model-paths: ["models"]      # DBT models
+test-paths: ["tests"]        # DBT tests
+
+# Directories to be removed by `dbt clean`
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Model materialization settings
+models:
+  fin_sim:
+    staging:
+      +materialized: view    # Staging models as views
+    marts:
+      +materialized: table   # Mart models as tables
+
+
