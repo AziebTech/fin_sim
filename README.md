@@ -9,7 +9,7 @@
 - Automated data validation and testing
 - GitHub Pages documentation and interactive analysis
 
-**[Click Here to view the final FinSim Analysis](docs/index.md)**
+**[Click Here to view the final FinSim Analysis](https://aziebtech.github.io/fin_sim/)**
 
 
 
